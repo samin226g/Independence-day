@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Independence Day Greetings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Header Ad Slot */
+        .header-ad {
+            width: 100%;
+            height: 90px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header-ad p {
+            color: #888;
+            font-size: 1rem;
+        }
+
+        /* Header Styles */
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to right, #01411C, #046A38);
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Form Section */
+        .form-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #046A38;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(4, 106, 56, 0.2);
+        }
+
+        .btn {
+            background-color: #046A38;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #01411C;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Greeting Card Section */
+        .card-section {
+            display: none;
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #046A38;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #01411C, #046A38);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .card-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .card-body {
+            padding: 2rem;
+            line-height: 1.8;
+        }
+
+        .greeting-line {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .recipient-name {
+            font-weight: bold;
+            color: #01411C;
+            font-size: 1.3rem;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+
+        .sender-name {
+            font-weight: bold;
+            color: #01411C;
+            font-size: 1.3rem;
+        }
+
+        .footer-message {
+            font-size: 1.3rem;
+            color: #046A38;
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .action-btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 150px;
+        }
+
+        .save-btn {
+            background-color: #01411C;
+            color: white;
+            border: none;
+        }
+
+        .share-btn {
+            background-color: white;
+            color: #01411C;
+            border: 2px solid #01411C;
+        }
+
+        .save-btn:hover {
+            background-color: #013016;
+            transform: translateY(-3px);
+        }
+
+        .share-btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Ad Slot */
+        .footer-ad {
+            width: 100%;
+            height: 90px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid #ddd;
+            margin-top: 2rem;
+        }
+
+        .footer-ad p {
+            color: #888;
+            font-size: 1rem;
+        }
+
+        /* Fireworks */
+        .firework {
+            position: fixed;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .card-container {
+                padding: 0;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .header-ad, .footer-ad {
+                height: 70px;
+            }
+        }
+    </style>
+    <!-- Include html2canvas library for image saving -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <!-- Header Ad Slot -->
+    <div class="header-ad">
+        <p><script type="text/javascript"> 	atOptions = { 		'key' : 'fc29ecfac7049564db71d1db707b6732', 		'format' : 'iframe', 		'height' : 90, 		'width' : 728, 		'params' : {} 	}; </script> <script type="text/javascript" src="//deterrentreseptivereseptive.com/fc29ecfac7049564db71d1db707b6732/invoke.js"></script></p>
+    </div>
+    
+    <!-- Header with Description -->
+    <header class="header">
+        <h1>Pakistan Independence Day Greetings</h1>
+        <p>Create and share beautiful Independence Day wishes with your loved ones</p>
+    </header>
+    
+    <!-- Form Section -->
+    <div class="form-container" id="formContainer">
+        <div class="input-group">
+            <label for="sender">Your Name (Sender)</label>
+            <input type="text" id="sender" placeholder="Your name">
+        </div>
+        
+        <div class="input-group">
+            <label for="receiver">Recipient Name</label>
+            <input type="text" id="receiver" placeholder="Recipient's name">
+        </div>
+        
+        <button class="btn" id="generateBtn">Generate Greeting Card</button>
+    </div>
+    
+    <!-- Greeting Card Section -->
+    <div class="card-section" id="cardSection">
+        <div class="card-container" id="greetingCard">
+            <div class="card-header">
+                <h2>Happy Independence Day 🎉</h2>
+                <p>14th August 2025</p>
+            </div>
+            
+            <div class="card-body">
+                <div class="greeting-line">Dear <span class="recipient-name" id="displayReceiver"></span>,</div>
+                
+                <div class="message">
+                    May this Independence Day<br>
+                    bring peace, prosperity, and unity<br>
+                    to our beloved nation.
+                </div>
+                
+                <div class="greeting-line">With best wishes,</div>
+                <div class="sender-name" id="displaySender"></div>
+                
+                <div class="footer-message">Pakistan Zindabad! 🇵🇰</div>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button class="action-btn save-btn" id="saveBtn">Save Image</button>
+            <button class="action-btn share-btn" id="shareBtn">Share on WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Footer Ad Slot -->
+    <div class="footer-ad">
+        <p><script type="text/javascript"> 	atOptions = { 		'key' : 'fc29ecfac7049564db71d1db707b6732', 		'format' : 'iframe', 		'height' : 90, 		'width' : 728, 		'params' : {} 	}; </script> <script type="text/javascript" src="//deterrentreseptivereseptive.com/fc29ecfac7049564db71d1db707b6732/invoke.js"></script></p>
+    </div>
+
+    <script>
+        // DOM Elements
+        const formContainer = document.getElementById('formContainer');
+        const cardSection = document.getElementById('cardSection');
+        const senderInput = document.getElementById('sender');
+        const receiverInput = document.getElementById('receiver');
+        const generateBtn = document.getElementById('generateBtn');
+        const displaySender = document.getElementById('displaySender');
+        const displayReceiver = document.getElementById('displayReceiver');
+        const saveBtn = document.getElementById('saveBtn');
+        const shareBtn = document.getElementById('shareBtn');
+        const greetingCard = document.getElementById('greetingCard');
+        
+        // Generate Card Function
+        generateBtn.addEventListener('click', function() {
+            const sender = senderInput.value.trim();
+            const receiver = receiverInput.value.trim();
+            
+            if (sender === '' || receiver === '') {
+                alert('Please enter both names to generate the card!');
+                return;
+            }
+            
+            // Display names in card
+            displaySender.textContent = sender;
+            displayReceiver.textContent = receiver;
+            
+            // Show card and hide form
+            formContainer.style.display = 'none';
+            cardSection.style.display = 'block';
+            
+            // Scroll to card
+            cardSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Create fireworks celebration
+            createFireworks();
+        });
+        
+        // Create fireworks
+        function createFireworks() {
+            const colors = ['#01411C', '#046A38', '#FFFFFF', '#FFD700'];
+            
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.className = 'firework';
+                    firework.style.left = Math.random() * 100 + 'vw';
+                    firework.style.top = Math.random() * 100 + 'vh';
+                    firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    document.body.appendChild(firework);
+                    
+                    // Animate
+                    const size = Math.random() * 10 + 5;
+                    const animation = firework.animate([
+                        { transform: 'scale(1)', opacity: 1 },
+                        { transform: `scale(${size})`, opacity: 0 }
+                    ], {
+                        duration: Math.random() * 1000 + 500,
+                        easing: 'cubic-bezier(0, 0.2, 0.8, 1)'
+                    });
+                    
+                    animation.onfinish = () => {
+                        firework.remove();
+                    };
+                }, i * 100);
+            }
+        }
+        
+        // Save Card as Image
+        saveBtn.addEventListener('click', function() {
+            html2canvas(greetingCard).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'pakistan-independence-day-greeting.png';
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        });
+        
+        // Share on WhatsApp
+        shareBtn.addEventListener('click', function() {
+            const sender = senderInput.value.trim();
+            const receiver = receiverInput.value.trim();
+            const shareText = `Happy Independence Day 🎉\n14th August 2025\n\nDear ${receiver},\n\nMay this Independence Day\nbring peace, prosperity, and unity\nto our beloved nation.\n\nWith best wishes,\n${sender}\n\nPakistan Zindabad! 🇵🇰`;
+            
+            const encodedText = encodeURIComponent(shareText);
+            window.open(`https://wa.me/?text=${encodedText}`, '_blank');
+        });
+    </script>
+</body>
+</html>
